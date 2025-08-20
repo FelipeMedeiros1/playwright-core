@@ -6,7 +6,8 @@ import { CheckkBox } from '../componentes/CheckkBox';
 import { ComboBox } from '../componentes/ComboBox';
 import { Espera } from '../componentes/Espera';
 import { Assertiva } from '../componentes/Assertiva';
-import { ValidadorDeMensagem } from '../componentes/ValidadorDeMensagem';
+import { Calendario } from '../componentes/Calendario';
+import { Tabela } from '../componentes/Tabela';
 
 
 export abstract class PaginaBase {
@@ -19,7 +20,8 @@ export abstract class PaginaBase {
     protected readonly comboBox: ComboBox;
     protected readonly espera: Espera;
     protected readonly assertiva: Assertiva;
-    protected readonly validadorDeMensagem: ValidadorDeMensagem;
+    protected readonly tabela: Tabela;
+    protected readonly calendario: Calendario;
 
 
     constructor(page: Page) {
@@ -30,7 +32,14 @@ export abstract class PaginaBase {
         this.comboBox = new ComboBox(page);
         this.espera = new Espera(page);
         this.assertiva = new Assertiva(page);
-        this.validadorDeMensagem = new ValidadorDeMensagem();
+        this.calendario = new Calendario(page);
+        this.tabela = new Tabela(page);
+        this.assertiva = new Assertiva(page);
+        this.assertiva = new Assertiva(page);
+        this.assertiva = new Assertiva(page);
+        this.assertiva = new Assertiva(page);
+        this.assertiva = new Assertiva(page);
+        this.assertiva = new Assertiva(page);
 
     }
 

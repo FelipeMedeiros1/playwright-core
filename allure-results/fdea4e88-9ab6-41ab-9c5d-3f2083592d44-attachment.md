@@ -1,0 +1,153 @@
+# Page snapshot
+
+```yaml
+- link:
+  - /url: admin.htm
+  - img
+- link "ParaBank":
+  - /url: index.htm
+  - img "ParaBank"
+- paragraph: Experience the difference
+- list:
+  - listitem: Solutions
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+  - listitem:
+    - link "Admin Page":
+      - /url: admin.htm
+- list:
+  - listitem:
+    - link "home":
+      - /url: index.htm
+  - listitem:
+    - link "about":
+      - /url: about.htm
+  - listitem:
+    - link "contact":
+      - /url: contact.htm
+- heading "Customer Login" [level=2]
+- paragraph: Username
+- textbox
+- paragraph: Password
+- textbox
+- button "Log In"
+- paragraph:
+  - link "Forgot login info?":
+    - /url: lookup.htm
+- paragraph:
+  - link "Register":
+    - /url: register.htm
+- heading "Signing up is easy!" [level=1]
+- paragraph: If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
+- table:
+  - rowgroup:
+    - 'row "First Name: QaCV"':
+      - cell "First Name:"
+      - cell "QaCV":
+        - textbox: QaCV
+      - cell
+    - 'row "Last Name: Melo"':
+      - cell "Last Name:"
+      - cell "Melo":
+        - textbox: Melo
+      - cell
+    - 'row "Address: 252 Alameda Elisa"':
+      - cell "Address:"
+      - cell "252 Alameda Elisa":
+        - textbox: 252 Alameda Elisa
+      - cell
+    - 'row "City: Albuquerque de Nossa Senhora"':
+      - cell "City:"
+      - cell "Albuquerque de Nossa Senhora":
+        - textbox: Albuquerque de Nossa Senhora
+      - cell
+    - 'row "State: Paraiba"':
+      - cell "State:"
+      - cell "Paraiba":
+        - textbox: Paraiba
+      - cell
+    - 'row "Zip Code: 38107-369"':
+      - cell "Zip Code:"
+      - cell "38107-369":
+        - textbox: 38107-369
+      - cell
+    - 'row "Phone #: (15) 70923-1451"':
+      - 'cell "Phone #:"'
+      - cell "(15) 70923-1451":
+        - textbox: (15) 70923-1451
+      - cell
+    - 'row "SSN: 79170488373"':
+      - cell "SSN:"
+      - cell "79170488373":
+        - textbox: "79170488373"
+      - cell
+    - row:
+      - cell
+    - 'row "Username: QayP_822 This username already exists."':
+      - cell "Username:"
+      - cell "QayP_822":
+        - textbox: QayP_822
+      - cell "This username already exists."
+    - row "Password:":
+      - cell "Password:"
+      - cell:
+        - textbox
+      - cell
+    - row "Confirm:":
+      - cell "Confirm:"
+      - cell:
+        - textbox
+      - cell
+    - row "Register":
+      - cell
+      - cell "Register":
+        - button "Register"
+- list:
+  - listitem:
+    - link "Home":
+      - /url: index.htm
+    - text: "|"
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+    - text: "|"
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+    - text: "|"
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+    - text: "|"
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+    - text: "|"
+  - listitem:
+    - link "Forum":
+      - /url: http://forums.parasoft.com/
+    - text: "|"
+  - listitem:
+    - link "Site Map":
+      - /url: sitemap.htm
+    - text: "|"
+  - listitem:
+    - link "Contact Us":
+      - /url: contact.htm
+- paragraph: © Parasoft. All rights reserved.
+- list:
+  - listitem: "Visit us at:"
+  - listitem:
+    - link "www.parasoft.com":
+      - /url: http://www.parasoft.com/
+```

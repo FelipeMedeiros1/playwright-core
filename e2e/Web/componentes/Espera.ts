@@ -11,15 +11,19 @@ export class Espera {
      * Espera até que o elemento esteja visível
      */
     async esperarElementoVisivel(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
     }
 
     /**
      * Espera até que o elemento esteja clicável (visível + habilitado)
      */
     async esperarElementoClicavel(locator: Locator) {
-        await expect(locator).toBeVisible();
-        await expect(locator).toBeEnabled();
+        await this.esperarElementoVisivel;
+        await this.esperarElementoHabilitado(locator);
+    }
+
+    async esperarConterTexto(locator:Locator, texto: string){
+        await expect(locator).toContainText(texto);
     }
 
     /**
@@ -40,21 +44,25 @@ export class Espera {
      * Espera até que o campo contenha o valor esperado
      */
     async esperarTextoNoCampo(locator: Locator, texto: string) {
-        await expect(locator).toHaveValue(texto, { timeout: 10000 });
+        await expect(locator).toHaveValue(texto, { timeout: 2000 });
+    }
+  
+    async esperarTextoExato(locator: Locator, texto: string) {
+        await expect(locator).toHaveText(texto, { timeout: 2000 });
     }
 
     /**
      * Espera até que o elemento tenha o atributo com valor esperado
      */
     async esperarAtributoComValor(locator: Locator, atributo: string, valor: string) {
-        await expect(locator).toHaveAttribute(atributo, valor, { timeout: 15000 });
+        await expect(locator).toHaveAttribute(atributo, valor, { timeout: 2000 });
     }
 
     /**
      * Espera até que o elemento esteja habilitado (não disabled e visível)
      */
     async esperarElementoHabilitado(locator: Locator) {
-        await expect(locator).toBeEnabled({ timeout: 30000 });
+        await expect(locator).toBeEnabled({ timeout: 10000 });
     }
 
     /**

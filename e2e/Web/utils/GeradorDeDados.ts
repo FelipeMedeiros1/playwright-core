@@ -14,7 +14,8 @@ export class GeradorDeDados {
     }
 
     nome(): string {
-        return this.removerAcentosESpeciais('@Qa' + faker.string.alpha({ length: 2 }));
+        // return this.removerAcentosESpeciais('@Qa' + faker.string.alpha({ length: 2 }));
+        return this.removerAcentosESpeciais(faker.person.firstName());
     }
 
     sobrenome(): string {
@@ -74,8 +75,8 @@ export class GeradorDeDados {
 
     usuario(): string {
         const nome = this.nome().toLowerCase();
-        const numero = faker.string.numeric(2);
-        return this.removerAcentosESpeciais(`${nome}${numero}`);
+        const alfanumerico = faker.string.alphanumeric();
+        return this.removerAcentosESpeciais(`${nome}`);
     }
 
     gerarDados(): DadosCompletos {

@@ -7,7 +7,7 @@ export class Assertiva {
      * Verifica se o elemento está visível
      */
     async estaVisivel(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toBeVisible();
     }
 
@@ -22,7 +22,7 @@ export class Assertiva {
      * Verifica se o texto está presente no elemento
      */
     async contemTexto(locator: Locator, texto: string) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toContainText(texto);
     }
 
@@ -30,7 +30,7 @@ export class Assertiva {
      * Verifica se o texto é exatamente igual
      */
     async textoExato(locator: Locator, texto: string) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toHaveText(texto);
     }
 
@@ -38,7 +38,7 @@ export class Assertiva {
      * Verifica se o campo está preenchido com determinado valor
      */
     async valorDoCampo(locator: Locator, valorEsperado: string) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toHaveValue(valorEsperado);
     }
 
@@ -46,7 +46,7 @@ export class Assertiva {
      * Verifica se o elemento tem determinado atributo com valor
      */
     async temAtributoComValor(locator: Locator, atributo: string, valor: string) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toHaveAttribute(atributo, valor);
     }
 
@@ -75,7 +75,7 @@ export class Assertiva {
      * Verifica se o elemento está habilitado
      */
     async estaHabilitado(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toBeEnabled();
     }
 
@@ -83,7 +83,7 @@ export class Assertiva {
      * Verifica se o elemento está desabilitado
      */
     async estaDesabilitado(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toBeDisabled();
     }
 
@@ -91,7 +91,7 @@ export class Assertiva {
      * Verifica se checkbox está marcado
      */
     async checkboxMarcado(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toBeChecked();
     }
 
@@ -99,7 +99,7 @@ export class Assertiva {
      * Verifica se checkbox está desmarcado
      */
     async checkboxDesmarcado(locator: Locator) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).not.toBeChecked();
     }
 
@@ -107,7 +107,7 @@ export class Assertiva {
      * Verifica se o número de elementos encontrados é exatamente igual ao esperado
      */
     async quantidadeDeElementos(locator: Locator, quantidadeEsperada: number) {
-        await expect(locator).toBeVisible({ timeout: 60000 });
+        await expect(locator).toBeVisible({ timeout: 10000 });
         await expect(locator).toHaveCount(quantidadeEsperada);
     }
 }

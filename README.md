@@ -101,3 +101,31 @@ npx playwright install --with-deps
 
 # Executar apenas testes marcados com @tag
 npx playwright test --grep @tag
+
+
+Dependências necessárias
+bash
+Copy
+Edit
+# Core
+npm i -D @playwright/test
+
+# Baixar navegadores
+npx playwright install
+
+# Allure adapter + CLI
+npm i -D allure-playwright allure-commandline
+
+
+Como usar o Allure
+bash
+Copy
+Edit
+# 1) Rodar os testes
+npx playwright test
+
+# 2) Gerar relatório Allure (estático em ./allure-report)
+npm run report:allure
+
+# 3) Servir o Allure (servidor local temporário)
+npm run report:allure:open

@@ -1,0 +1,153 @@
+# Page snapshot
+
+```yaml
+- link:
+  - /url: admin.htm
+  - img
+- link "ParaBank":
+  - /url: index.htm
+  - img "ParaBank"
+- paragraph: Experience the difference
+- list:
+  - listitem: Solutions
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+  - listitem:
+    - link "Admin Page":
+      - /url: admin.htm
+- list:
+  - listitem:
+    - link "home":
+      - /url: index.htm
+  - listitem:
+    - link "about":
+      - /url: about.htm
+  - listitem:
+    - link "contact":
+      - /url: contact.htm
+- heading "Customer Login" [level=2]
+- paragraph: Username
+- textbox
+- paragraph: Password
+- textbox
+- button "Log In"
+- paragraph:
+  - link "Forgot login info?":
+    - /url: lookup.htm
+- paragraph:
+  - link "Register":
+    - /url: register.htm
+- heading "Signing up is easy!" [level=1]
+- paragraph: If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
+- table:
+  - rowgroup:
+    - 'row "First Name: Qafunction native code"':
+      - cell "First Name:"
+      - cell "Qafunction native code":
+        - textbox: Qafunction native code
+      - cell
+    - 'row "Last Name: Saraiva"':
+      - cell "Last Name:"
+      - cell "Saraiva":
+        - textbox: Saraiva
+      - cell
+    - 'row "Address: 12237 Marginal Moraes"':
+      - cell "Address:"
+      - cell "12237 Marginal Moraes":
+        - textbox: 12237 Marginal Moraes
+      - cell
+    - 'row "City: Ladislau de Nossa Senhora"':
+      - cell "City:"
+      - cell "Ladislau de Nossa Senhora":
+        - textbox: Ladislau de Nossa Senhora
+      - cell
+    - 'row "State: Rondonia"':
+      - cell "State:"
+      - cell "Rondonia":
+        - textbox: Rondonia
+      - cell
+    - 'row "Zip Code: 57561-177"':
+      - cell "Zip Code:"
+      - cell "57561-177":
+        - textbox: 57561-177
+      - cell
+    - 'row "Phone #: (18) 88379-9262"':
+      - 'cell "Phone #:"'
+      - cell "(18) 88379-9262":
+        - textbox: (18) 88379-9262
+      - cell
+    - 'row "SSN: 34725213615"':
+      - cell "SSN:"
+      - cell "34725213615":
+        - textbox: "34725213615"
+      - cell
+    - row:
+      - cell
+    - 'row "Username: Qafunction native code _738 This username already exists."':
+      - cell "Username:"
+      - cell "Qafunction native code _738":
+        - textbox: Qafunction native code _738
+      - cell "This username already exists."
+    - row "Password:":
+      - cell "Password:"
+      - cell:
+        - textbox
+      - cell
+    - row "Confirm:":
+      - cell "Confirm:"
+      - cell:
+        - textbox
+      - cell
+    - row "Register":
+      - cell
+      - cell "Register":
+        - button "Register"
+- list:
+  - listitem:
+    - link "Home":
+      - /url: index.htm
+    - text: "|"
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+    - text: "|"
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+    - text: "|"
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+    - text: "|"
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+    - text: "|"
+  - listitem:
+    - link "Forum":
+      - /url: http://forums.parasoft.com/
+    - text: "|"
+  - listitem:
+    - link "Site Map":
+      - /url: sitemap.htm
+    - text: "|"
+  - listitem:
+    - link "Contact Us":
+      - /url: contact.htm
+- paragraph: © Parasoft. All rights reserved.
+- list:
+  - listitem: "Visit us at:"
+  - listitem:
+    - link "www.parasoft.com":
+      - /url: http://www.parasoft.com/
+```

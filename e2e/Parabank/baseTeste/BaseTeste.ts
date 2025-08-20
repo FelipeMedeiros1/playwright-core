@@ -1,8 +1,7 @@
 import { test as base, Page, BrowserContext } from '@playwright/test';
-import PaginaDeLogin from '../login/pagina/PaginaDeLogin';
-import PaginaCadastrarUsuario from '../cadastro/pagina/PaginaCadastrarUsuario';
-import PaginaAtualizarUsuario from '../cadastro/pagina/PaginaAtualizarUsuario';
-
+import PaginaCadastrarUsuario from '../paginas/cadastro/PaginaCadastrarUsuario';
+import PaginaAtualizarUsuario from'../paginas/cadastro/PaginaAtualizarUsuario';
+import PaginaDeLogin from'../paginas/login/PaginaDeLogin';
 
 // Tipagem customizada do contexto de teste
 type TestFixtures = {
